@@ -41,7 +41,9 @@ padding: 10px;
 line-height: 1.4;
 
 */
-
+.imgHeader {
+  width: 750px;
+}
 p {
   font-size: 16px;
   font-family: roboto;
@@ -57,7 +59,8 @@ p {
 img {
   border-radius: 10px;
   background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-  width: 750px;
+  width: 300px;
+  height: 270px;
 }
 .content-row {
   display: flex;
@@ -66,6 +69,11 @@ img {
 .content-row div {
   /*======= margin propery yaratın.  Değerini 20px olarak atayın*/
   margin: 20px;
+}
+.content-row div h1 {
+  font-family: "Gaegu", cursive;
+  margin-top: 0px;
+  font-size: 30px;
 }
 
 .container {
@@ -109,9 +117,16 @@ img {
   margin: 0 0 10px 0;
 }
 
+.contact-section .hakkimizda {
+  margin-top: 20px;
+}
 /*======= contact-section class'da address tag'i için aşağdıaki stilleri içeren bir selector yaratın:
    line-height: 2;
 */
+
+.contact-section .address {
+  line-height: 2;
+}
 
 footer {
   width: 100%;
@@ -122,6 +137,7 @@ footer {
 footer .footer-content {
   margin: 0 auto;
   /*======= width property yaratın. Değerini 750px olarak atayın */
+  width: 750px;
 }
 
 footer .footer-content h3 {
@@ -139,6 +155,12 @@ footer nav {
   text-decoration: underline;
 */
 
+footer nav a {
+  margin: 10px;
+  color: black;
+  text-decoration: underline;
+}
+
 footer nav a:first-child {
   margin-left: 0;
 }
@@ -149,5 +171,7 @@ footer nav a:first-child {
 
 footer .footer-content .copyright {
   padding: 20px 0;
+
   /*======= metni ortalayacak kodu yazın */
+  text-align: center;
 }
