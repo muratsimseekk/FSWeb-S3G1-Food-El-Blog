@@ -168,6 +168,9 @@ footer nav a:first-child {
 /*======= Footer nav'daki anchor tag için aşağıdaki stilleri içeren bir hover state yaratın:
   color: white;
 */
+footer nav a:hover {
+  color: white;
+}
 
 footer .footer-content .copyright {
   padding: 20px 0;
