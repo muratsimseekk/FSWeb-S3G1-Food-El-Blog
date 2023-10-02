@@ -1,34 +1,24 @@
 /*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/
-body {
+* {
   color: #3c373b;
-  margin: 50px;
   box-sizing: border-box;
-  font-family: "Gaegu", cursive;
+}
+
+.topHeader {
+  color: #000;
+  font-family: Comic Sans MS;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
 }
 
 h1 {
   font-family: "Gaegu", cursive;
   margin: 20px 0;
   /*=======  Font size'ı 60px yapın ve text'i ortalayın(center) */
-  font-size: 60px;
-  text-align: center;
-}
-
-.navbar ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar ul li {
-  display: flex;
-  list-style-type: none;
-  background-color: #e79947;
-  color: white;
-  font-size: 25px;
-  margin: 5px;
-  padding: 15px;
-  border-radius: 15px;
-
+  font-size: 10px;
 }
 
 h2,
@@ -44,10 +34,12 @@ h6 {
 }
 
 /*======= Sayfadaki TÜM p tag'leri için aşağıdaki özellikleri içeren bir selector yaratın:
+
 font-size: 16px;
 font-family: roboto;
 padding: 10px;
 line-height: 1.4;
+
 */
 
 p {
@@ -58,13 +50,15 @@ p {
 }
 
 /*======= Sayfadaki TÜM imajlar için aşağıdaki özellikleri içeren bir selector yaratın:
-  border-radius: 10px;
-*/
 
+  border-radius: 10px;
+
+*/
 img {
   border-radius: 10px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  width: 750px;
 }
-
 .content-row {
   display: flex;
 }
@@ -78,6 +72,7 @@ img {
   /*======= width property yaratın. Değerini 750px olarak atayın */
   margin: 0 auto;
   width: 750px;
+  box-sizing: border-box;
 }
 
 .container header nav a {
@@ -89,12 +84,13 @@ img {
   color: white;
   text-decoration: none;
   margin-bottom: 20px;
-  /*======= background property yaratın. Değerini #E79947 olarak atayınız.*/
   background-color: #e79947;
+  /*======= background property yaratın. Değerini  olarak atayınız.*/
 }
 
 .container header nav a:hover {
   /*======= background property yaratın ve değeri white olsun.  Sonra, color property yaratın ve değerini #E79947 yapın. */
+
   background-color: white;
   color: #e79947;
 }
